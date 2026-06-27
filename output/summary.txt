@@ -1,0 +1,20 @@
+
+
+SYNTHÈSE DE L'AUDIT
+
+
+Nombre total de constats : 50
+
+Critiques : 13
+
+Élevés : 13
+
+Moyens : 16
+
+Faibles : 8
+
+Les éléments critiques doivent être traités en priorité,
+suivis des problèmes de performance,
+des sujets d'architecture,
+puis des améliorations de qualité et de documentation.
+

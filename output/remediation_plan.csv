@@ -1,0 +1,51 @@
+﻿ID,Category,Finding,Criticité,Action corrective,Charge (jours),Depends_On
+C001,Security,Hardcoded Password,Critique,Corriger la vulnérabilité et appliquer les bonnes pratiques de sécurité.,5,
+C002,Security,Weak Password Policy,Critique,Corriger la vulnérabilité et appliquer les bonnes pratiques de sécurité.,5,C001
+C003,Security,Outdated Dependency,Critique,Corriger la vulnérabilité et appliquer les bonnes pratiques de sécurité.,5,
+C004,Performance,Slow SQL Query,Élevée,Optimiser les performances et réduire les temps de réponse.,3,
+C005,Performance,Missing Index,Élevée,Optimiser les performances et réduire les temps de réponse.,3,C004
+C006,Code Quality,Duplicated Code,Faible,Refactoriser le code et supprimer les duplications.,1,
+C007,Code Quality,Large Function,Faible,Refactoriser le code et supprimer les duplications.,1,C006
+C008,Documentation,Missing Documentation,Faible,Compléter la documentation technique.,1,
+C009,Testing,No Unit Tests,Élevée,Mettre en place des tests automatisés.,3,C006
+C010,Testing,Low Test Coverage,Élevée,Mettre en place des tests automatisés.,3,C009
+C011,Security,Open Ports,Critique,Corriger la vulnérabilité et appliquer les bonnes pratiques de sécurité.,5,
+C012,Security,No HTTPS,Critique,Corriger la vulnérabilité et appliquer les bonnes pratiques de sécurité.,5,C011
+C013,Performance,Memory Leak,Élevée,Optimiser les performances et réduire les temps de réponse.,3,
+C014,Performance,High CPU Usage,Élevée,Optimiser les performances et réduire les temps de réponse.,3,C013
+C015,Architecture,Tight Coupling,Moyenne,Revoir l'architecture afin de réduire le couplage.,2,
+C016,Architecture,No Layer Separation,Moyenne,Revoir l'architecture afin de réduire le couplage.,2,C015
+C017,Security,SQL Injection Risk,Critique,Corriger la vulnérabilité et appliquer les bonnes pratiques de sécurité.,5,
+C018,Security,XSS Vulnerability,Critique,Corriger la vulnérabilité et appliquer les bonnes pratiques de sécurité.,5,
+C019,Security,CSRF Protection Missing,Critique,Corriger la vulnérabilité et appliquer les bonnes pratiques de sécurité.,5,C018
+C020,DevOps,No CI/CD,Moyenne,Automatiser le déploiement et renforcer la supervision.,2,
+C021,DevOps,No Monitoring,Moyenne,Automatiser le déploiement et renforcer la supervision.,2,
+C022,DevOps,No Logging,Moyenne,Automatiser le déploiement et renforcer la supervision.,2,
+C023,Database,Null Values,Moyenne,Améliorer la qualité et l'intégrité des données.,2,
+C024,Database,Duplicate Records,Moyenne,Améliorer la qualité et l'intégrité des données.,2,C023
+C025,Database,Inconsistent Dates,Moyenne,Améliorer la qualité et l'intégrité des données.,2,C023
+C026,Code Quality,Magic Numbers,Faible,Refactoriser le code et supprimer les duplications.,1,
+C027,Code Quality,Unused Variables,Faible,Refactoriser le code et supprimer les duplications.,1,
+C028,Performance,Large Files,Élevée,Optimiser les performances et réduire les temps de réponse.,3,
+C029,Security,Missing MFA,Critique,Corriger la vulnérabilité et appliquer les bonnes pratiques de sécurité.,5,C001
+C030,Documentation,No API Documentation,Faible,Compléter la documentation technique.,1,
+C031,Testing,Integration Tests Missing,Élevée,Mettre en place des tests automatisés.,3,C009
+C032,Testing,Regression Tests Missing,Élevée,Mettre en place des tests automatisés.,3,C031
+C033,Architecture,Monolithic Design,Moyenne,Revoir l'architecture afin de réduire le couplage.,2,
+C034,Architecture,Poor Naming,Moyenne,Revoir l'architecture afin de réduire le couplage.,2,
+C035,Security,Expired Certificates,Critique,Corriger la vulnérabilité et appliquer les bonnes pratiques de sécurité.,5,
+C036,Performance,Cache Missing,Élevée,Optimiser les performances et réduire les temps de réponse.,3,
+C037,Performance,API Latency,Élevée,Optimiser les performances et réduire les temps de réponse.,3,C036
+C038,DevOps,No Backup Strategy,Moyenne,Automatiser le déploiement et renforcer la supervision.,2,
+C039,DevOps,No Disaster Recovery,Moyenne,Automatiser le déploiement et renforcer la supervision.,2,C038
+C040,Database,Foreign Keys Missing,Moyenne,Améliorer la qualité et l'intégrité des données.,2,
+C041,Database,Large Tables,Moyenne,Améliorer la qualité et l'intégrité des données.,2,C040
+C042,Security,Secrets in Git,Critique,Corriger la vulnérabilité et appliquer les bonnes pratiques de sécurité.,5,
+C043,Security,Weak Encryption,Critique,Corriger la vulnérabilité et appliquer les bonnes pratiques de sécurité.,5,
+C044,Code Quality,Complex Methods,Faible,Refactoriser le code et supprimer les duplications.,1,C007
+C045,Documentation,README Missing,Faible,Compléter la documentation technique.,1,
+C046,Performance,Disk Usage High,Élevée,Optimiser les performances et réduire les temps de réponse.,3,
+C047,Testing,Manual Testing Only,Élevée,Mettre en place des tests automatisés.,3,
+C048,Security,Session Timeout Missing,Critique,Corriger la vulnérabilité et appliquer les bonnes pratiques de sécurité.,5,C029
+C049,Architecture,No Error Handling,Moyenne,Revoir l'architecture afin de réduire le couplage.,2,
+C050,DevOps,Configuration Drift,Moyenne,Automatiser le déploiement et renforcer la supervision.,2,

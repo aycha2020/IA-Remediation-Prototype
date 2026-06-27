@@ -1,0 +1,51 @@
+ID,Category,Finding,Description,Severity,Impact,Component,Estimated_Days,Depends_On,Status
+C001,Security,Hardcoded Password,Passwords stored in source code,Critical,High,Authentication,2,None,Open
+C002,Security,Weak Password Policy,Passwords do not meet complexity requirements,High,High,Authentication,2,C001,Open
+C003,Security,Outdated Dependency,Library contains known vulnerabilities,Critical,High,Backend,3,None,Open
+C004,Performance,Slow SQL Query,SQL query takes more than 8 seconds,High,High,Database,3,None,Open
+C005,Performance,Missing Index,Database indexes are missing,Medium,Medium,Database,2,C004,Open
+C006,Code Quality,Duplicated Code,Functions duplicated in several modules,Medium,Medium,API,2,None,Open
+C007,Code Quality,Large Function,Function exceeds 500 lines,Medium,Medium,Backend,2,C006,Open
+C008,Documentation,Missing Documentation,Technical documentation is absent,Low,Low,Project,2,None,Open
+C009,Testing,No Unit Tests,No automated tests available,High,High,Backend,5,C006,Open
+C010,Testing,Low Test Coverage,Coverage below 20%,Medium,Medium,Backend,4,C009,Open
+C011,Security,Open Ports,Unused ports exposed,Critical,High,Infrastructure,2,None,Open
+C012,Security,No HTTPS,Application uses HTTP,High,High,Infrastructure,2,C011,Open
+C013,Performance,Memory Leak,Memory usage increases continuously,High,High,API,4,None,Open
+C014,Performance,High CPU Usage,Application consumes excessive CPU,Medium,Medium,Backend,3,C013,Open
+C015,Architecture,Tight Coupling,Modules strongly dependent,Medium,Medium,Backend,5,None,Open
+C016,Architecture,No Layer Separation,Business logic mixed with controllers,Medium,Medium,API,4,C015,Open
+C017,Security,SQL Injection Risk,Queries not parameterized,Critical,High,Database,3,None,Open
+C018,Security,XSS Vulnerability,User input not sanitized,Critical,High,Frontend,3,None,Open
+C019,Security,CSRF Protection Missing,Forms vulnerable to CSRF,High,High,Frontend,2,C018,Open
+C020,DevOps,No CI/CD,Deployment manual,Medium,Medium,Pipeline,4,None,Open
+C021,DevOps,No Monitoring,Application monitoring absent,Medium,Medium,Infrastructure,3,None,Open
+C022,DevOps,No Logging,Logs insufficient for debugging,Medium,Medium,Backend,2,None,Open
+C023,Database,Null Values,Missing mandatory values,Medium,Medium,Warehouse,2,None,Open
+C024,Database,Duplicate Records,Duplicate data detected,Medium,Medium,Warehouse,2,C023,Open
+C025,Database,Inconsistent Dates,Date formats inconsistent,Low,Low,Warehouse,1,C023,Open
+C026,Code Quality,Magic Numbers,Hardcoded numeric values,Low,Low,Backend,1,None,Open
+C027,Code Quality,Unused Variables,Unused code fragments detected,Low,Low,Backend,1,None,Open
+C028,Performance,Large Files,Large files slow loading,Medium,Medium,Storage,2,None,Open
+C029,Security,Missing MFA,Multi-factor authentication absent,High,High,Authentication,3,C001,Open
+C030,Documentation,No API Documentation,Swagger missing,Low,Low,API,2,None,Open
+C031,Testing,Integration Tests Missing,Integration tests absent,Medium,Medium,Backend,5,C009,Open
+C032,Testing,Regression Tests Missing,Regression tests unavailable,Medium,Medium,Backend,4,C031,Open
+C033,Architecture,Monolithic Design,Application difficult to scale,Medium,Medium,System,8,None,Open
+C034,Architecture,Poor Naming,Classes poorly named,Low,Low,Backend,1,None,Open
+C035,Security,Expired Certificates,SSL certificate expired,Critical,High,Infrastructure,1,None,Open
+C036,Performance,Cache Missing,No caching mechanism,Medium,Medium,API,3,None,Open
+C037,Performance,API Latency,API response exceeds SLA,High,High,API,4,C036,Open
+C038,DevOps,No Backup Strategy,No backup configured,Critical,High,Infrastructure,3,None,Open
+C039,DevOps,No Disaster Recovery,Recovery plan missing,High,High,Infrastructure,5,C038,Open
+C040,Database,Foreign Keys Missing,Referential integrity not enforced,Medium,Medium,Database,3,None,Open
+C041,Database,Large Tables,Partitioning absent,Medium,Medium,Database,3,C040,Open
+C042,Security,Secrets in Git,API keys committed,Critical,High,Repository,2,None,Open
+C043,Security,Weak Encryption,Deprecated algorithms used,Critical,High,Backend,3,None,Open
+C044,Code Quality,Complex Methods,Cyclomatic complexity high,Medium,Medium,Backend,3,C007,Open
+C045,Documentation,README Missing,Repository lacks README,Low,Low,Repository,1,None,Open
+C046,Performance,Disk Usage High,Storage almost full,Medium,Medium,Infrastructure,2,None,Open
+C047,Testing,Manual Testing Only,No automation,Medium,Medium,QA,5,None,Open
+C048,Security,Session Timeout Missing,Sessions never expire,High,High,Authentication,2,C029,Open
+C049,Architecture,No Error Handling,Exceptions poorly managed,Medium,Medium,Backend,3,None,Open
+C050,DevOps,Configuration Drift,Different environments inconsistent,Medium,Medium,Infrastructure,4,None,Open

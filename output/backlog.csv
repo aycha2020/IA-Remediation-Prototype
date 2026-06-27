@@ -1,0 +1,51 @@
+﻿ID,Finding,Priorité,Charge (jours),Depends_On,Status
+C001,Hardcoded Password,P1,5,,Open
+C029,Missing MFA,P1,5,C001,Open
+C035,Expired Certificates,P1,5,,Open
+C019,CSRF Protection Missing,P1,5,C018,Open
+C018,XSS Vulnerability,P1,5,,Open
+C017,SQL Injection Risk,P1,5,,Open
+C043,Weak Encryption,P1,5,,Open
+C012,No HTTPS,P1,5,C011,Open
+C011,Open Ports,P1,5,,Open
+C042,Secrets in Git,P1,5,,Open
+C002,Weak Password Policy,P1,5,C001,Open
+C003,Outdated Dependency,P1,5,,Open
+C048,Session Timeout Missing,P1,5,C029,Open
+C009,No Unit Tests,P2,3,C006,Open
+C028,Large Files,P2,3,,Open
+C036,Cache Missing,P2,3,,Open
+C037,API Latency,P2,3,C036,Open
+C010,Low Test Coverage,P2,3,C009,Open
+C032,Regression Tests Missing,P2,3,C031,Open
+C005,Missing Index,P2,3,C004,Open
+C031,Integration Tests Missing,P2,3,C009,Open
+C047,Manual Testing Only,P2,3,,Open
+C014,High CPU Usage,P2,3,C013,Open
+C013,Memory Leak,P2,3,,Open
+C046,Disk Usage High,P2,3,,Open
+C004,Slow SQL Query,P2,3,,Open
+C041,Large Tables,P3,2,C040,Open
+C039,No Disaster Recovery,P3,2,C038,Open
+C038,No Backup Strategy,P3,2,,Open
+C034,Poor Naming,P3,2,,Open
+C033,Monolithic Design,P3,2,,Open
+C040,Foreign Keys Missing,P3,2,,Open
+C025,Inconsistent Dates,P3,2,C023,Open
+C016,No Layer Separation,P3,2,C015,Open
+C015,Tight Coupling,P3,2,,Open
+C020,No CI/CD,P3,2,,Open
+C021,No Monitoring,P3,2,,Open
+C022,No Logging,P3,2,,Open
+C050,Configuration Drift,P3,2,,Open
+C024,Duplicate Records,P3,2,C023,Open
+C049,No Error Handling,P3,2,,Open
+C023,Null Values,P3,2,,Open
+C030,No API Documentation,P4,1,,Open
+C026,Magic Numbers,P4,1,,Open
+C044,Complex Methods,P4,1,C007,Open
+C045,README Missing,P4,1,,Open
+C008,Missing Documentation,P4,1,,Open
+C007,Large Function,P4,1,C006,Open
+C006,Duplicated Code,P4,1,,Open
+C027,Unused Variables,P4,1,,Open
